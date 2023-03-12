@@ -2,13 +2,14 @@ package com.ll.p120906;
 
 public class Solution {
     public int solution(int n) {
-        if(n == 1234){
-            return 10;
+        String s = Integer.toString(n);
+        int sum = 0;
+
+        for(int i = 0; i < s.length(); i++){
+            sum += Character.getNumericValue(s.charAt(i));
         }
-        int answer = 0;
 
 
-
-        return answer;
+        return sum;
     }
 }
