@@ -19,4 +19,16 @@ public class Tests {
     void t2(){
         assertThat( new Solution().solution(930211)).isEqualTo(16);
     }
+
+    @Test
+    @DisplayName("t3 Input(999999) / Output(54)")
+    void t3(){
+        assertThat(new Solution().solution(999999)).isEqualTo(54);
+    }
+
+    @Test
+    @DisplayName("t4 Input(1) / Output(1)")
+    void t4(){
+        assertThat(new Solution().solution(1)).isEqualTo(1);
+    }
 }
